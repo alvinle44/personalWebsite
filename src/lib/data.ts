@@ -9,16 +9,6 @@ export const currentSong = {
 
 export const projects = [
   {
-    id: 1,
-    title: "ECAD Datasheet RAG Assistant",
-    description: "",
-    tech: ["Python", "FastAPI", "LangChain", "ChromaDB", "OpenAI API"],
-    github: "https://github.com/alvinle44/ECAD-RAG-Assistant",
-    live: null,
-    category: "AI/ML",
-    gradient: "from-blue-500/20 to-cyan-500/20",
-  },
-  {
     id: 2,
     title: "NBA Player Prop Prediction System",
     description: "",
