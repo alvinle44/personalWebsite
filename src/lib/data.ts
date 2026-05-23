@@ -91,7 +91,7 @@ export const experience = [
     period: "Summer 2026",
     type: "work",
     description:
-      "DoD-affiliated TRMCi Summer 2026 Internship at Point Mugu, CA. Will perform software testing and evaluation with AI/ML techniques, validating system behavior and contributing to quality assurance for defense systems.",
+      "DoD-affiliated TRMCi Summer 2026 Internship at Point Mugu, CA.",
     skills: ["Software Testing", "AI/ML", "DoD Systems", "QA"],
   },
   {
@@ -101,8 +101,28 @@ export const experience = [
     period: "Aug 2022 – Jun 2023",
     type: "work",
     description:
-      "Automated ImageJ (Jython) image analysis scripts, improving pipeline throughput by 60%. Analyzed 1,000+ microscopy images across a 4-person team; designed experiments and presented quantitative findings on protein PGC1-α in transgenic mouse neurons.",
+      "Worked on biomedical research related to Alzheimer's disease, studying the protein PGC1-α in transgenic mouse neurons.",
     skills: ["Python/Jython", "ImageJ", "Data Analysis", "Research"],
+  },
+  {
+    id: 5,
+    role: "Youth Basketball Head Coach (Volunteer)",
+    company: "Recreation League",
+    period: "Jan 2023 – Jun 2023",
+    type: "work",
+    description:
+      "Volunteered as head coach for a youth basketball team. Developed practice plans, mentored players, and led the team through a full season.",
+    skills: [],
+  },
+  {
+    id: 6,
+    role: "Medical Assistant",
+    company: "Urgent Care Clinic",
+    period: "Aug 2021 – Jan 2023",
+    type: "work",
+    description:
+      "Assisted physicians with patient intake, vitals, and clinical documentation at a fast-paced urgent care clinic. Supported front and back office operations.",
+    skills: [],
   },
   {
     id: 4,
@@ -111,7 +131,7 @@ export const experience = [
     period: "Sept 2019 – Jun 2023",
     type: "education",
     description:
-      "Dean's Honor List all quarters. GPA: 3.92/4.00. Developed a strong foundation in the sciences before transitioning into computer science and software engineering.",
+      "Dean's Honor List all quarters. GPA: 3.92/4.00.",
     skills: ["Biology", "Research Methods", "Dean's Honor List"],
   },
 ];

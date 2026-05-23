@@ -60,11 +60,11 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-gray-700 text-lg leading-relaxed mb-8 max-w-md"
             >
-              I&apos;m a CS grad student at Georgia Tech studying machine learning. I like building
-              projects around data, AI, and sports analytics — usually things that start as random
-              ideas and somehow turn into full applications. Lately I&apos;ve been working on AI
-              tools, prediction models, and full-stack apps while learning way too many new
-              technologies along the way.
+              I&apos;m a CS grad student at Georgia Tech studying machine learning. I enjoy building
+              projects around data, AI, and sports analytics, usually starting from random ideas or
+              things I find interesting. Recently, I&apos;ve been spending most of my time learning new AI
+              tools, working on prediction models, and building full-stack applications while exploring
+              new technologies along the way.
             </motion.p>
 
             <motion.div
@@ -75,7 +75,7 @@ export default function Hero() {
             >
               <button
                 onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
-                className="px-5 py-2.5 rounded-full bg-red-600 hover:bg-red-700 text-white text-sm font-medium transition-colors"
+                className="px-5 py-2.5 rounded-full border border-gray-200 hover:border-red-200 hover:bg-red-50 text-gray-700 hover:text-red-600 text-sm font-medium transition-colors"
               >
                 see my work
               </button>
@@ -129,12 +129,12 @@ export default function Hero() {
             <div className="relative">
               {/* Red circle behind photo */}
               <div className="absolute -inset-3 rounded-full bg-red-100 blur-2xl opacity-60" />
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl ring-1 ring-red-100">
+              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl ring-1 ring-red-100 bg-white">
                 <Image
-                  src="/alvin.png"
+                  src="/alvin_headshot.png"
                   alt="Alvin Le"
                   fill
-                  className="object-cover object-top"
+                  className="object-contain"
                   priority
                 />
               </div>

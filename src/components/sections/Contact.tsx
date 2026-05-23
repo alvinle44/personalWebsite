@@ -32,10 +32,8 @@ export default function Contact() {
             <span className="w-6 h-px bg-red-400 inline-block" />
             {"don't be a stranger"}
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">{"let's talk."}</h2>
-          <p className="mt-3 text-gray-700 max-w-md">
-            {"Whether it's a job, a project, or just saying hi — my inbox is always open."}
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">{"contact me!"}</h2>
+
         </motion.div>
 
         <div className="grid lg:grid-cols-5 gap-10">

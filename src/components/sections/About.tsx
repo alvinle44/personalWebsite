@@ -36,15 +36,15 @@ export default function About() {
           >
             <p>
               I started out studying Biology at UC Irvine before eventually switching into computer
-              science. Over time I found myself enjoying building software and working with data much
+              science. Over time I found myself enjoying building and working with data much
               more, which led me to pursue my M.S. in Computer Science at Georgia Tech with a focus
               on machine learning.
             </p>
             <p>
-              Outside of school and coding, I&apos;m a big Warriors fan, spend way too much time
+              Personally, I&apos;m a big Warriors fan, spend way too much time
               following basketball, and enjoy playing billiards. I also started cutting hair during
-              COVID and still do it because I genuinely enjoy it. Most of the time I&apos;m either
-              listening to music, working on side projects, or learning something new that caught my
+              COVID and still do it because I genuinely the art behind it. Most of the time I&apos;m either
+              working out, building side projects, playing baskebtall, or learning something new that caught my
               interest.
             </p>
           </motion.div>

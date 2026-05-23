@@ -46,19 +46,9 @@ export default function Experience() {
                   {item.period}
                 </span>
               </div>
-              <p className="text-gray-700 text-sm leading-relaxed ml-4 mb-3">
+              <p className="text-gray-700 text-sm leading-relaxed ml-4">
                 {item.description}
               </p>
-              <div className="flex flex-wrap gap-1.5 ml-4">
-                {item.skills.map((s) => (
-                  <span
-                    key={s}
-                    className="text-xs text-gray-600 bg-gray-50 border border-gray-100 px-2 py-0.5 rounded-md"
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
             </motion.div>
           ))}
         </div>

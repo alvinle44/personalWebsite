@@ -1,12 +1,10 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { GithubIcon } from "@/components/ui/SocialIcons";
 import { projects } from "@/lib/data";
-
-const FILTERS = ["all", "AI/ML", "Systems"];
 
 function ProjectCard({ project, index }: { project: (typeof projects)[0]; index: number }) {
   const ref = useRef(null);
@@ -20,7 +18,6 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
       transition={{ duration: 0.4, delay: index * 0.08 }}
       className="group bg-white border border-gray-100 hover:border-red-100 rounded-2xl p-6 transition-all duration-200 hover:shadow-md hover:shadow-red-50 w-full sm:w-72"
     >
-      {/* Category dot */}
       <div className="flex items-center justify-between mb-4">
         <span className="text-xs text-gray-600 bg-gray-50 px-2.5 py-1 rounded-full">
           {project.category}
@@ -57,11 +54,8 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
 }
 
 export default function Projects() {
-  const [filter, setFilter] = useState("all");
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
-
-  const filtered = filter === "all" ? projects : projects.filter((p) => p.category === filter);
 
   return (
     <section id="projects" className="py-28 bg-[#fef9f9]">
@@ -77,28 +71,11 @@ export default function Projects() {
             <span className="w-6 h-px bg-red-400 inline-block" />
             things i&apos;ve built
           </p>
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">projects.</h2>
-            <div className="flex gap-2">
-              {FILTERS.map((f) => (
-                <button
-                  key={f}
-                  onClick={() => setFilter(f)}
-                  className={`text-sm px-4 py-1.5 rounded-full transition-colors ${
-                    filter === f
-                      ? "bg-red-600 text-white"
-                      : "border border-gray-200 text-gray-700 hover:border-red-200 hover:text-red-500"
-                  }`}
-                >
-                  {f}
-                </button>
-              ))}
-            </div>
-          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">projects.</h2>
         </motion.div>
 
         <div className="flex flex-wrap justify-center gap-5">
-          {filtered.map((p, i) => (
+          {projects.map((p, i) => (
             <ProjectCard key={p.id} project={p} index={i} />
           ))}
         </div>
